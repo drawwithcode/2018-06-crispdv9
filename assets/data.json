@@ -1,0 +1,84 @@
+{
+  "number" : 3,
+  "people" : [
+  {
+    "": 1,
+    "Status": "Urban",
+    "Sex": "Male",
+    "Cause": "Heart disease",
+    "Rate": 210.2,
+    "SE": 0.2
+  },
+  {
+    "": 53,
+    "Status": "Urban",
+    "Sex": "Male",
+    "Cause": "Cancer",
+    "Rate": 195.9,
+    "SE": 0.2
+  },
+  {
+    "": 105,
+    "Status": "Urban",
+    "Sex": "Male",
+    "Cause": "Lower respiratory",
+    "Rate": 44.5,
+    "SE": 0.1
+  },
+  {
+    "": 157,
+    "Status": "Urban",
+    "Sex": "Male",
+    "Cause": "Unintentional injuries",
+    "Rate": 49.6,
+    "SE": 0.1
+  },
+  {
+    "": 209,
+    "Status": "Urban",
+    "Sex": "Male",
+    "Cause": "Cerebrovascular diseases",
+    "Rate": 36.1,
+    "SE": 0.1
+  },
+  {
+    "": 261,
+    "Status": "Urban",
+    "Sex": "Male",
+    "Cause": "Alzheimers",
+    "Rate": 19.4,
+    "SE": 0.1
+  },
+  {
+    "": 313,
+    "Status": "Urban",
+    "Sex": "Male",
+    "Cause": "Diabetes",
+    "Rate": 24.9,
+    "SE": 0.1
+  },
+  {
+    "": 365,
+    "Status": "Urban",
+    "Sex": "Male",
+    "Cause": "Flu and pneumonia",
+    "Rate": 17.7,
+    "SE": 0.1
+  },
+  {
+    "": 417,
+    "Status": "Urban",
+    "Sex": "Male",
+    "Cause": "Suicide",
+    "Rate": 19.2,
+    "SE": 0.1
+  },
+  {
+    "": 469,
+    "Status": "Urban",
+    "Sex": "Male",
+    "Cause": "Nephritis",
+    "Rate": 15.7,
+    "SE": 0.1
+  }
+]
