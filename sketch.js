@@ -19,13 +19,15 @@ function setup() {
 
     var x = random(width);
     var y = random(height);
-    var d = row.Rate;
+    var d = row.Rate + 100;
+    d = parseFloat(d);
     var l = row.Cause;
 
-    var newBall = new Ball(x, y, d, l)
+    var newBall = new Ball(x, y, d,l)
     balls.push(newBall);
 
-  }
+
+}
 
 }
 
@@ -35,18 +37,18 @@ function draw() {
 
   background(0)
 
-
-
   for (var j = 0; j < balls.length; j++) {
     balls[j].move();
-    balls[j].display();
     balls[j].click();
+    balls[j].display();
+
+
 
   }
 
   //image(myImage,50,50,myImage.width/6,myImage.height/6)
   push()
-    var myText = 'Most men in the urban areas of US died because of a heart attack'
+    var myText = 'Most men in the urban areas of US died because of a heart disease'
     fill(255)
     textFont('Arial')
     textSize(25)
@@ -69,28 +71,28 @@ function mouseWheel(event) {
 
 }
 
-function Ball(_x, _y, _diameter, _label) {
+function Ball(_x, _y, _diametro, _label,) {
   this.x = _x;
   this.y = _y;
-  this.d = _diameter;
+  this.size = _diametro;
   this.label = _label;
   this.color = 'red';
 
   this.move = function() {
-    this.x = this.x + random(-2, 2);
-    this.y = this.y + random(-2, 2);
+    this.x = this.x + random(-1, 1);
+    this.y = this.y + random(-1, 1);
   }
 
   this.display = function() {
+    noStroke();
     fill(this.color)
-    ellipse(this.x, this.y, this.d);
+    console.log(this.size)
+    ellipse(this.x, this.y, this.size);
     fill(255)
-    noStroke()
     text(this.label, this.x, this.y)
   }
 
   this.click = function() {
-
     var d = dist(mouseX, mouseY, this.x, this.y);
     if (d < 40) {
       this.color = (0);
@@ -98,6 +100,8 @@ function Ball(_x, _y, _diameter, _label) {
 
     }
   }
+
+
 
 }
 
